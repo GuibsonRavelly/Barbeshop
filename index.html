@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agência XYZ</title>
+
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/menu.css">
+  <link rel="stylesheet" href="./src/css/about.css">
+  <link rel="stylesheet" href="./src/css/services.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asimovian&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/font-awesome.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="/">
+        <h1 class="logo">Gravelly Barbeshop</h1>
+      </a>
+
+      <nav>
+
+        <input type="checkbox" id="menu-hamburger" />
+
+        <label for="menu-hamburger" class="menu-hamburger">
+          <div class="menu">
+            <span class="hamburguer"></span>
+          </div>
+
+        </label>
+
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+  </header>
+
+  <section class="hero">
+    <div class="hero-container">
+      <h2>Your New Favorite Barber Shop</h2>
+      <p>We provide the best services for you to look amazing.</p>
+      <a href="#contact" class="btn">Book Now</a>
+    </div>
+
+  </section>
+
+  <section class="about">
+    <div class="item">
+      <h3>About</h3>
+      <p>Você sabia que a Gravelly já foi a Turma do Bairro? <br><br>
+
+        A História da TDB e o Nascimento de Gravelly
+        Muita gente nos pergunta de onde veio o nome "Turma do Bairro" e por que mudamos para Gravelly em 2020. A
+        resposta é simples e nostálgica!
+
+        Nossa jornada começou com a ideia de uma verdadeira "turma", inspirada por um desenho que traduzia nossa
+        essência: um grupo de amigos unidos e prontos para atender a galera. A Turma do Bairro era mais que um nome, era
+        um conceito.
+
+        <br>
+
+      </p>
+
+
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+
+    <div class="image rigth"></div>
+    <div class="image left"></div>
+
+    <div class="item">
+      <h3>Com o tempo <img src="./src/images/ampulheta.png" alt="" srcset=""> </h3>
+      <p>a marca cresceu, se profissionalizou, e sentimos que era hora de dar um passo além. Foi aí que nasceu a
+        Gravelly, um nome que representa minha identidade e a nova fase do nosso trabalho.
+
+        <br>
+
+        Apesar da mudança, o espírito daquela "Turma do Bairro" original ainda vive em cada atendimento, no nosso jeito
+        descontraído e na comunidade que construímos aqui.
+
+        <br>
+
+        Seja bem-vindo a fazer parte da nossa história, que começou como um desenho e hoje é uma realidade.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+
+  </section>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços com Galeria e Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="services">
+    <div class="service-title">
+        <h4>SERVICES</h4>
+    </div>
+
+    <div class="service-global">
+        <div class="service-item">
+            <img src="./src/images/cutHair.jpg" alt="Haircut">
+            <div class="service-text">
+                <h5>Haircut</h5>
+                <p>Professional haircuts tailored to your style.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="./src/images/cutHair.jpg" alt="Beard">
+            <div class="service-text">
+                <h5>Beard</h5>
+                <p>Experience a smooth and precise shave.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="./src/images/cutHair.jpg" alt="Beard Trim">
+            <div class="service-text">
+                <h5>Beard Trim</h5>
+                <p>Keep your beard looking sharp and well-groomed.</p>
+            </div>
+        </div>
+        <div class="service-item">
+            <img src="./src/images/cutHair.jpg" alt="Styling">
+            <div class="service-text">
+                <h5>Styling</h5>
+                <p>Get the perfect look for any occasion.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-container">
+        <ul class="service-gallery">
+            <li>
+                <input type="radio" id="slide1" name="slide" checked>
+                <label for="slide1"></label>
+                <img src="./src/images/cutHair.jpg" alt="Corte de cabelo 1">
+            </li>
+            <li>
+                <input type="radio" id="slide2" name="slide">
+                <label for="slide2"></label>
+                <img src="./src/images/cutHair.jpg" alt="Corte de cabelo 2">
+            </li>
+            <li>
+                <input type="radio" id="slide3" name="slide">
+                <label for="slide3"></label>
+                <img src="./src/images/cutHair.jpg" alt="Corte de cabelo 3">
+            </li>
+            <li>
+                <input type="radio" id="slide4" name="slide">
+                <label for="slide4"></label>
+                <img src="./src/images/cutHair.jpg" alt="Corte de cabelo 4">
+            </li>
+            <li>
+                <input type="radio" id="slide5" name="slide">
+                <label for="slide5"></label>
+                <img src="./src/images/cutHair.jpg" alt="Corte de cabelo 5">
+            </li>
+            <li>
+                <input type="radio" id="slide6" name="slide">
+                <label for="slide6"></label>
+                <img src="./src/images/cutHair.jpg" alt="Corte de cabelo 6">
+            </li>
+        </ul>
+
+        <div class="slider-nav">
+            <a href="#slide6" class="prev">❮</a>
+            <a href="#slide2" class="next">❯</a>
+        </div>
+    </div>
+
+</section>
+
+  <section class="projects">
+
+  </section>
+
+  <footer class="footer">
+
+  </footer>
+</body>
+
+</html>

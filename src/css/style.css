@@ -1,0 +1,180 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "header header header header"
+                          "hero hero hero hero"
+                          "about about about about"
+                          "services services services services"
+                          "projects projects projects projects"
+                          "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.6rem;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+}
+
+.header{
+    grid-area: header;
+    background-color:black;
+}
+
+.header .header-container{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+
+}
+
+.header h1 {
+   font-size:3rem;
+   font-weight: 700;
+   transition: 0.7s;
+   color: #fff;
+
+}
+
+header h1:hover{
+    color: rgb(248, 93, 37);;
+   
+}
+
+
+
+.hero{
+    grid-area: hero;
+    height: 89vh;
+    background: url('../images/hero.png') no-repeat center center;
+    filter: brightness(0.8);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero .hero-container{
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #ffffff13;
+    
+    height: 50%;
+    width: 50%;
+    display: flex;
+     align-items: center;
+    justify-content: center;
+    align-items: center;
+     flex-direction: column;
+     font-family: 'Roboto', sans-serif;
+
+}
+
+.hero h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.hero .btn{
+    text-decoration: none;
+    background-color: rgb(248, 93, 37);;
+    color: black;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.hero .btn:hover{
+    background-color:black;
+    color: rgb(248, 93, 37);
+    transition: 0.7s;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 35px;
+    width: 35px;
+    bottom: 35px;
+    background: url('../images/seta-para-baixo.png') no-repeat center center;
+    background-size: contain;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+    cursor: pointer;
+}
+
+@-webkit-keyframes downarrow {
+    0% {
+        -webkit-transform: translateY(0); opacity:0;
+    }
+    100% {
+        -webkit-transform: translateY(0.1em) ; opacity: 0.9;
+    }
+}
+
+@keyframes downarrow {
+    0% {
+        transform: translateY(0); opacity:0;
+    }
+    100% {
+        transform: translateY(0.1em); opacity:0.9;
+    }
+}
+
+@media (max-width:425px) {
+    .hero{
+        height: 60vh;
+    }
+    .hero .hero-container{
+        width: 90%;
+        height: 60%;
+        padding: 5px;
+    }
+    
+}
+
+.about{
+    grid-area: about;
+    display: grid;
+    max-width: (--max-width-size);
+    grid-template-columns:  1fr 1fr;
+    
+
+}
+
+
+.services {
+    grid-area: services;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+
+
+
+
+.projects{
+    grid-area: projects;
+}
+
+
+.footer{
+    grid-area: footer;
+}

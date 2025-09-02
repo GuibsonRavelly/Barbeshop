@@ -1,0 +1,150 @@
+/* Estilos gerais da seção de serviços */
+.services {
+    grid-area: services;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px;
+}
+
+.service-title {
+    font-size: 4rem;
+    text-align: center;
+    margin: 40px 0;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Estilos da galeria (várias imagens lado a lado) */
+.service-global {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+    gap: 30px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.service-item {
+    /* Permite que o texto fique por cima da imagem */
+    position: relative; 
+    overflow: hidden;
+}
+
+.service-item img {
+    width: 300px; /* Largura fixa para as imagens da galeria */
+    height: auto;
+    display: block;
+    filter: brightness(0.7);
+    transition: 0.7s;
+}
+
+.service-item:hover img {
+    filter: brightness(1);
+}
+
+.service-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.service-text h5 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* --- Estilos para o Slider (diferentes da galeria) --- */
+.slider-container {
+    max-width: 600px;
+    margin: 40px auto;
+    position: relative;
+    padding: 0 40px;
+}
+
+.service-gallery {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 300px; /* Altura do slider. Ajuste conforme sua imagem. */
+    width: 100%;
+    position: relative;
+}
+
+.service-gallery li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.6s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.service-gallery li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.service-gallery input {
+    display: none;
+}
+
+.service-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.service-gallery label {
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.service-gallery li:nth-child(1) label { left: 45%; }
+.service-gallery li:nth-child(2) label { left: 50%; }
+.service-gallery li:nth-child(3) label { left: 55%; }
+.service-gallery li:nth-child(4) label { left: 60%; }
+.service-gallery li:nth-child(5) label { left: 65%; }
+.service-gallery li:nth-child(6) label { left: 70%; }
+
+.service-gallery li input:checked + label {
+    background-color: #888;
+}
+
+.slider-nav a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.slider-nav .prev {
+    left: 5px;
+}
+
+.slider-nav .next {
+    right: 5px;
+}
