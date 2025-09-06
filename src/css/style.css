@@ -170,11 +170,19 @@ header h1:hover{
 
 
 
-.projects{
+.contact{
     grid-area: projects;
+   display: flex;
+   gap: 20px;
+   width: 100%;
+   background-color: black;
+   color: wheat;
 }
 
 
 .footer{
     grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
